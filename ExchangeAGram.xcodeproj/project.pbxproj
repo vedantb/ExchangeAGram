@@ -9,11 +9,15 @@
 /* Begin PBXBuildFile section */
 		390D99AF1A88521A005A1734 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D99AE1A88521A005A1734 /* AppDelegate.swift */; };
 		390D99B21A88521A005A1734 /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 390D99B01A88521A005A1734 /* ExchangeAGram.xcdatamodeld */; };
-		390D99B41A88521A005A1734 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D99B31A88521A005A1734 /* ViewController.swift */; };
 		390D99B71A88521A005A1734 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 390D99B51A88521A005A1734 /* Main.storyboard */; };
 		390D99B91A88521A005A1734 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 390D99B81A88521A005A1734 /* Images.xcassets */; };
 		390D99BC1A88521A005A1734 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 390D99BA1A88521A005A1734 /* LaunchScreen.xib */; };
 		390D99C81A88521A005A1734 /* ExchangeAGramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D99C71A88521A005A1734 /* ExchangeAGramTests.swift */; };
+		390D99D21A88661E005A1734 /* FeedVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D99D11A88661E005A1734 /* FeedVIewController.swift */; };
+		390D99D41A886D88005A1734 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D99D31A886D88005A1734 /* FeedCell.swift */; };
+		390D99D61A8877C8005A1734 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390D99D51A8877C8005A1734 /* MobileCoreServices.framework */; };
+		390D99D81A888F23005A1734 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D99D71A888F23005A1734 /* FeedItem.swift */; };
+		390D99DA1A889EF9005A1734 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390D99D91A889EF9005A1734 /* FilterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +35,17 @@
 		390D99AD1A88521A005A1734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		390D99AE1A88521A005A1734 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		390D99B11A88521A005A1734 /* ExchangeAGram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExchangeAGram.xcdatamodel; sourceTree = "<group>"; };
-		390D99B31A88521A005A1734 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		390D99B61A88521A005A1734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		390D99B81A88521A005A1734 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		390D99BB1A88521A005A1734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		390D99C11A88521A005A1734 /* ExchangeAGramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAGramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		390D99C61A88521A005A1734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		390D99C71A88521A005A1734 /* ExchangeAGramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeAGramTests.swift; sourceTree = "<group>"; };
+		390D99D11A88661E005A1734 /* FeedVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVIewController.swift; sourceTree = "<group>"; };
+		390D99D31A886D88005A1734 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		390D99D51A8877C8005A1734 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		390D99D71A888F23005A1734 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		390D99D91A889EF9005A1734 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				390D99D61A8877C8005A1734 /* MobileCoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,11 +89,14 @@
 			isa = PBXGroup;
 			children = (
 				390D99AE1A88521A005A1734 /* AppDelegate.swift */,
-				390D99B31A88521A005A1734 /* ViewController.swift */,
+				390D99D11A88661E005A1734 /* FeedVIewController.swift */,
+				390D99D91A889EF9005A1734 /* FilterViewController.swift */,
+				390D99D31A886D88005A1734 /* FeedCell.swift */,
 				390D99B51A88521A005A1734 /* Main.storyboard */,
 				390D99B81A88521A005A1734 /* Images.xcassets */,
 				390D99BA1A88521A005A1734 /* LaunchScreen.xib */,
 				390D99B01A88521A005A1734 /* ExchangeAGram.xcdatamodeld */,
+				390D99D71A888F23005A1734 /* FeedItem.swift */,
 				390D99AC1A88521A005A1734 /* Supporting Files */,
 			);
 			path = ExchangeAGram;
@@ -93,6 +105,7 @@
 		390D99AC1A88521A005A1734 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				390D99D51A8877C8005A1734 /* MobileCoreServices.framework */,
 				390D99AD1A88521A005A1734 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -215,9 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				390D99B41A88521A005A1734 /* ViewController.swift in Sources */,
+				390D99DA1A889EF9005A1734 /* FilterViewController.swift in Sources */,
 				390D99AF1A88521A005A1734 /* AppDelegate.swift in Sources */,
+				390D99D41A886D88005A1734 /* FeedCell.swift in Sources */,
 				390D99B21A88521A005A1734 /* ExchangeAGram.xcdatamodeld in Sources */,
+				390D99D81A888F23005A1734 /* FeedItem.swift in Sources */,
+				390D99D21A88661E005A1734 /* FeedVIewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
